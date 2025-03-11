@@ -95,10 +95,10 @@
   }
   
     @font-face {
-      font-family: 'Nothing';
-      src: url('/fonts/ndot-47-inspired-by-nothing.otf') format('opentype');
-      font-weight: normal;
-      font-style: normal;
+        font-family: 'Nothing';
+        src: url('/fonts/ndot-47-inspired-by-nothing.otf') format('opentype');
+        font-weight: normal;
+        font-style: normal;
     }
     
     .site-title{
@@ -332,12 +332,14 @@ img{
   .home__container{
     display: flex;
     gap: 1.75rem;
-    padding-left: 0;
     justify-content: space-around;
     align-items: center;
   }
 
-  .home__social {         
+  .home__social {
+    display: flex;           
+    justify-content: center; 
+    gap: 1rem;               
     z-index: 10;
 }
 }
@@ -428,7 +430,7 @@ img{
   display: flex;
   gap: 1.75rem;
   padding-left: 0;
-  /* margin-left: var(--mb-1); */
+  margin-left: var(--mb-1);
   justify-content: space-around;
   align-items: center;
 }
@@ -605,7 +607,7 @@ img{
     justify-content: center; /* Horizontally center the content */
     align-items: center; /* Vertically center the content */
     margin: 0 auto; /* Center the image in its container */
-    }
+}
   }
 }
 
@@ -620,12 +622,12 @@ img{
 
 /* ===================== CONTACT SECTION ================== */
 
-/* ===================== FOOTER SECTION ================== */
+  /* ===================== FOOTER SECTION ================== */
 
   .footer{
     padding: 0;
   }
-
+  
   .footer__container{
     row-gap: 3.5rem;
   }
@@ -935,5 +937,3 @@ img{
     }
    
 }
-
-
