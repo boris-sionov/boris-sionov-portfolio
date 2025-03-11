@@ -95,10 +95,10 @@
   }
   
     @font-face {
-        font-family: 'Nothing';
-        src: url('/fonts/ndot-47-inspired-by-nothing.otf') format('opentype');
-        font-weight: normal;
-        font-style: normal;
+      font-family: 'Nothing';
+      src: url('/fonts/ndot-47-inspired-by-nothing.otf') format('opentype');
+      font-weight: normal;
+      font-style: normal;
     }
     
     .site-title{
