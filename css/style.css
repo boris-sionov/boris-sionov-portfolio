@@ -89,14 +89,14 @@
     
     @font-face {
       font-family: 'MiniSystem';
-      src: url('css/fonts/Minisystem.otf') format('opentype');
+      src: url('./fonts/Minisystem.otf') format('opentype');
       font-weight: normal;
       font-style: normal;
   }
   
     @font-face {
         font-family: 'Nothing';
-        src: url('css/fonts/ndot-47-inspired-by-nothing.otf') format('opentype');
+        src: url('./fonts/ndot-47-inspired-by-nothing.otf') format('opentype');
         font-weight: normal;
         font-style: normal;
     }
