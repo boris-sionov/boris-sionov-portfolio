@@ -308,7 +308,7 @@ img{
 }
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {  
   .nav__menu{
       position: fixed;
       bottom: -100%;
@@ -332,7 +332,6 @@ img{
   .home__container{
     display: flex;
     gap: 1.75rem;
-    padding-left: 0
     justify-content: space-around;
     align-items: center;
   }
