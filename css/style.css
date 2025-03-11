@@ -286,9 +286,6 @@ img{
   align-items: center;
 }
 
-/* .ml-3, .mx-3 {
-  margin-left: -20rem !important;
-} */
 
 .nav__logo:hover{
   color: var(--first-color);
@@ -324,6 +321,30 @@ img{
       border-radius: 1.5rem 1.5rem 0 0;
       transition: .5s;
   }
+  
+  .container{
+    place-items: center; 
+    justify-content: center;  /* Center horizontally */
+    align-items: center;      /* Center vertically */
+    
+  }
+
+  .home__container{
+    display: flex;
+    gap: 1.75rem;
+    padding-left: 0;
+    /* margin-left: var(--mb-1); */
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .home__social {
+    display: flex;           
+    justify-content: center; 
+    gap: 1rem;               
+    z-index: 10;
+}
+
 }
 
 .nav__list{
