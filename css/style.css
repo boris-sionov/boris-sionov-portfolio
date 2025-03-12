@@ -26,8 +26,8 @@
     --background-body-color: rgba(255, 255, 255, 0.068); /* Very Transparent White */
     --border-color: rgba(255, 255, 255, 0.425);
     --border-style: solid;
-    --footer-color: hsl(250, 53%, 18%);
-
+    --footer-color: hsl(var(--hue-color), 52%, 18%); 
+    
     --gradient-color: linear-gradient(140deg, 
         #5D48C7 0%,      /* Medium purple */
         #5E5BC9 40%,     /* Slightly lighter purple */
@@ -79,9 +79,7 @@
     /*  ======== Background  ========= */
     --background-body-color: hsl(var(--hue-color), 66%, 99%);
     --border-color: none;
-    --border-style: none;
-    --footer-color: var(--first-color);
-    
+    --border-style: none;    
     
 }
 
@@ -106,7 +104,7 @@
     }
     
 /* Font Size For Larger Devices */
-@media screen  and (min-width: 968px){
+@media screen  and (min-width: 1000px){
     :root{
         --big-font-size: 3rem;
         --h1-font-size: 2.5rem;
@@ -328,6 +326,30 @@ img{
     gap: 1rem;               
     z-index: 10;
 }
+
+.footer__title{
+  font-size: var(--h1-font-size);
+  margin-bottom: var(--mb-0-25);
+  align-items: center;
+  flex-direction: column;
+  text-align: center; /* Center text */
+  display: flex;
+  justify-content: center; /* Center within flex container */
+}
+
+.footer__subtitle{
+  font-size: var(--small-font-size);
+  align-items: center;
+  flex-direction: column;
+  text-align: center; /* Center text */
+  display: flex;
+  justify-content: center; /* Center within flex container */
+}
+
+.footer__socials{
+  padding-left: var(--mb-1-5);
+}
+
 }
 
 .nav__list{
@@ -615,7 +637,7 @@ img{
     }
     
     .footer__container{
-      row-gap: 3.5rem;
+      row-gap: 1.5rem;
     }
     
     .footer__bg{
@@ -630,6 +652,7 @@ img{
     
     .footer__subtitle{
       font-size: var(--small-font-size);
+
     }
     
     .footer__links{
@@ -637,12 +660,12 @@ img{
       align-items: center;
       flex-direction: column;
       row-gap: 1.5rem;
+      padding-right: 2rem;
     }
     
     .footer__link:hover{
       color: var(--first-color-lighter);
     }
-    
     
     .footer__socials{
       display: flex;
@@ -663,7 +686,7 @@ img{
       font-size: var(--smaller-font-size);
       text-align: center;
       color: var(--text-color);
-      margin-top: var(--mb-3);
+      margin-top: var(--mb-2);
     }
     
     
