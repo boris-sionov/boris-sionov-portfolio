@@ -33,6 +33,7 @@ Thumbs.db
 _ide_helper.php
 /.idea
 /.vscode
+.vscode/
 # Eclipse project files
 .buildpath
 .project
