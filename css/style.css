@@ -96,7 +96,7 @@
   
     @font-face {
         font-family: 'Nothing';
-        src: url('../fonts/ndot-47-inspired-by-nothing.otf') format('opentype');
+        src: url('https://raw.githubusercontent.com/boris-sionov/boris-sionov-portfolio/main/fonts/ndot-47-inspired-by-nothing.otf') format('opentype');
         font-weight: normal;
         font-style: normal;
     }
