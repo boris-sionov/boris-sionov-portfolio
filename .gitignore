@@ -19,6 +19,7 @@ Thumbs.db
 *.bak
 *.tmp
 
+
 # Node.js (if using for build tools)
 node_modules/
 
