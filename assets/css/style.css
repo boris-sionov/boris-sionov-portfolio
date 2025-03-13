@@ -3,35 +3,35 @@
 /* =============== Variable CSS =============== */
 :root{
     --header-hight: 3rem;
-    --hue-color: 250;  /* GREEN: 144,  Blue: 230, Purple: 250, Pink: 340 */
+    --hue-color: 250;  /* 🌿 GREEN: 144,  🔵 BLUE: 230,  🟣 PURPLE: 250,  💖 PINK: 340 */
 
-    /* HSL Color Mode */
-    --first-color: hsl(var(--hue-color), 69%, 58%); /* Purple */
-    --first-color-second: hsl(var(--hue-color), 30%, 8%); /* Very Dark Brown */
-    --first-color-alt: hsl(var(--hue-color), 55%, 50%); /* Medium Purple */
-    --first-color-lighter: hsl(var(--hue-color), 90%, 82%); /* Light Purple - (Not changed) */
+    /* 🎨 HSL Color Mode */
+    --first-color: hsl(var(--hue-color), 69%, 58%); /* Primary Purple → 🟣 #6742DB */
+    --first-color-second: hsl(var(--hue-color), 71%, 47%); /* Darker Purple → 🟣 #5734C8 */
+    --first-color-alt: hsl(var(--hue-color), 55%, 50%); /* Alternative Purple → 🟣 #7A4EE3 */
+    --first-color-lighter: hsl(var(--hue-color), 90%, 82%); /* Light Purple → 🟣 #D4C5FA */
   
-    --title-color: hsl(var(--hue-color), 10%, 95%); /* Almost White */
-    --text-color: hsl(var(--hue-color), 10%, 75%); /* Light Gray */
-    --mainText: hsl(var(--hue-color), 10%, 20%); /* Dark Muted Gray */
-    --text-color-light: hsl(var(--hue-color), 10%, 65%); /* Soft Gray */   
-    --text-rights-color: hsl(var(--hue-color), 10%, 75%); /* Light Gray */
+    /* 📝 Text Colors */
+    --title-color: hsl(var(--hue-color), 10%, 15%); /* Dark Purple → 🟣 #3C1E4E */
+    --text-color: hsl(var(--hue-color), 10%, 40%); /* Medium Dark Purple → 🟣 #6E4B8C */
+    --mainText: hsl(var(--hue-color), 10%, 20%); /* Very Dark Purple → 🟣 #3A1E52 */
+    --text-color-light: hsl(var(--hue-color), 10%, 65%); /* Soft Light Purple → 🟣 #9C7FBC */
   
-    --input-color: hsl(var(--hue-color), 29%, 16%); /* Dark Brown */
-    --body-color: hsl(var(--hue-color), 30%, 14%); /* Dark Brownish Gray */
-    --container-color: hsl(var(--hue-color), 30%, 16%); /* Slightly Lighter Brownish Gray */
-    --scroll-bar-color: hsl(var(--hue-color), 10%, 50%); /* Medium Gray */
-    --scroll-thumb-color: hsl(var(--hue-color), 15%, 32%); /* Dark Gray */
+    /* 📥 Input & Background Colors */
+    --input-color: hsl(var(--hue-color), 70%, 88%); /* Light Purple Input → 🟣 #D2C5F9 */
+    --body-color: hsl(var(--hue-color), 66%, 99%); /* Light Purple Background → 🟣 #F4ECFE */
+    --container-color: #FFF; /* White Background → ⚪ #FFFFFF */
+
+    /* 🎚️ Scrollbar Colors */
+    --scroll-bar-color: hsl(var(--hue-color), 15%, 85%); /* Light Gray Scrollbar → ⚪ #D9C9E1 */
+    --scroll-thumb-color: hsl(var(--hue-color), 15%, 70%); /* Darker Gray Scrollbar → ⚫ #A98DB5 */
   
-    --background-body-color: rgba(255, 255, 255, 0.068); /* Very Transparent White */
-    --border-color: rgba(255, 255, 255, 0.425);
-    --border-style: solid;
-    --footer-color: hsl(var(--hue-color), 52%, 18%); 
-    
+    /* 🌈 Gradient Colors */
     --gradient-color: linear-gradient(140deg, 
-        #5D48C7 0%,      /* Medium purple */
-        #5E5BC9 40%,     /* Slightly lighter purple */
-        #657D9D 100%     /* Light bluish-purple-gray */
+        rgba(93,72,199,1) 0%,  /* Purple → 🟣 #5D48C7 */
+        rgba(94,91,201,1) 40%,  /* Slightly Lighter Purple → 🟣 #5E5BC9 */
+        rgba(101,125,157,1) 100%  /* Muted Blue → 🔵 #657D9D */
+
 );
 
     /*  ================ Font & Typography ============== */
@@ -84,13 +84,6 @@
 }
 
     /* =============== Custom Fonts =============== */
-    
-    @font-face {
-      font-family: 'MiniSystem';
-      src: url('../fonts/Minisystem.otf') format('opentype');
-      font-weight: normal;
-      font-style: normal;
-  }
   
     @font-face {
         font-family: 'Nothing';
@@ -117,32 +110,81 @@
     
 }
 
+
+
 /* =========== VARIABLE COLOR DARK THEME ============ */
 body.dark-theme{
-  /* HSL Color Mode */
-  --first-color: hsl(var(--hue-color), 69%, 58%); /* Purple - (Not changed) */
-  --first-color-second: hsl(var(--hue-color), 30%, 8%); /* Very Dark Brown */
-  --first-color-alt: hsl(var(--hue-color), 55%, 50%); /* Medium Purple - (Not changed) */
-  --first-color-lighter: hsl(var(--hue-color), 90%, 82%); /* Light Purple - (Not changed) */
+  /* 🎨 HSL Color Mode */
+  --first-color: hsl(var(--hue-color), 69%, 58%); /* Purple - (Not changed) → 🟣 #6742DB */
+  --first-color-second: hsl(var(--hue-color), 30%, 8%); /* Very Dark Brown → 🟤 #3D2A2A */
+  --first-color-alt: hsl(var(--hue-color), 55%, 50%); /* Medium Purple - (Not changed) → 🟣 #7A4EE3 */
+  --first-color-lighter: hsl(var(--hue-color), 90%, 82%); /* Light Purple - (Not changed) → 🟣 #D4C5FA */
 
-  --title-color: hsl(var(--hue-color), 10%, 95%); /* Almost White */
-  --text-color: hsl(var(--hue-color), 10%, 75%); /* Light Gray */
-  --text-rights-color: hsl(var(--hue-color), 10%, 75%); /* Light Gray */
+  /* 📝 Text Colors */
+  --title-color: hsl(var(--hue-color), 10%, 95%); /* Almost White → ⚪ #F2F2F2 */
+  --text-color: hsl(var(--hue-color), 10%, 75%); /* Light Gray → ⚪ #B8A6C2 */
+  --text-rights-color: hsl(var(--hue-color), 10%, 75%); /* Light Gray → ⚪ #B8A6C2 */
+  --text-color-light: hsl(var(--hue-color), 10%, 65%); /* Soft Gray - (Not changed) → ⚪ #A29DB0 */
 
-  --mainText: hsl(var(--hue-color), 10%, 75%); /* Light Gray */
-  --text-color-light: hsl(var(--hue-color), 10%, 65%); /* Soft Gray -(Not changed) */
-  --input-color: hsl(var(--hue-color), 29%, 16%); /* Dark Brown */
-  --body-color: hsl(var(--hue-color), 30%, 14%); /* Dark Brownish Gray */
-  --container-color: hsl(var(--hue-color), 30%, 16%); /* Slightly Lighter Brownish Gray */
-  --scroll-bar-color: hsl(var(--hue-color), 10%, 50%); /* Medium Gray */
-  --scroll-thumb-color: hsl(var(--hue-color), 15%, 32%); /* Dark Gray */
+  /* 📥 Main Text Colors */
+  --mainText: hsl(var(--hue-color), 10%, 75%); /* Light Gray → ⚪ #B8A6C2 */
+  
+  /* 📦 Input & Background Colors */
+  --input-color: hsl(var(--hue-color), 29%, 16%); /* Dark Brown → 🟤 #3C2323 */
+  --body-color: hsl(var(--hue-color), 30%, 14%); /* Dark Brownish Gray → 🟤 #3D2626 */
+  --container-color: hsl(var(--hue-color), 30%, 16%); /* Slightly Lighter Brownish Gray → 🟤 #4A2C2C */
 
-  --background-body-color: rgba(255, 255, 255, 0.068); /* Very Transparent White */
-  --border-color: rgba(255, 255, 255, 0.425);
+  /* 🎚️ Scrollbar Colors */
+  --scroll-bar-color: hsl(var(--hue-color), 10%, 50%); /* Medium Gray → ⚫ #808080 */
+  --scroll-thumb-color: hsl(var(--hue-color), 15%, 32%); /* Dark Gray → ⚫ #514B52 */
+
+  /* 🌈 Background Color */
+  --background-body-color: rgba(255, 255, 255, 0.068); /* Very Transparent White → ⚪ rgba(255, 255, 255, 0.068) */
+
+  /* 🖤 Borders */
+  --border-color: rgba(255, 255, 255, 0.425); /* Semi-Transparent White → ⚪ rgba(255, 255, 255, 0.425) */
   --border-style: solid;
-  --footer-color: hsl(250, 53%, 18%);
+
+    /* 🦶 Footer Color */
+    --footer-color: hsl(250, 53%, 18%); /* Dark Purple Footer → 🟣 #5A286B */
 
 }
+
+/* ======= NAV BUTTONS DARK/LIGHT THEME ==================== */
+.nav__btns{
+  display: flex;
+  align-items: center;
+  padding-left: var(--mb-0-5);
+  margin: 0;
+  margin-top: 5px;
+  gap: var(--mb-0-75);
+  color: var(--title-color);
+  
+}
+
+.dark_btn{
+  font-size: var(--h2-font-size);
+  cursor: pointer;
+  margin-right: 1rem;
+}
+
+.dark_btn:hover{
+  color: var(--first-color);
+}
+
+.change-theme{
+  font-size: 1.25rem;
+  color: var(--title-color);
+  margin-right: var(--mb-1);
+  cursor: pointer;
+}
+
+.change-theme:hover{
+  color: var(--first-color);
+}
+
+
+
 
 /* ============== BASE ================ */
 *{
@@ -482,16 +524,16 @@ img{
 }
 
 .home__welcome{
-  font-family: var(--nothing-font);
+  font-family: var(--robotomono-font);
   text-align: center;
-  font-size: var(--small-font-size);
+  font-size: var(--font-medium);
   color: var(--text-color);
   padding: 1.5rem;
   text-transform: none !important;
 }
 
 .home__title{
-  font-family: var(--nothing-font);
+  font-family: var(--robotomono-font);
   text-align: center;
   font-size: var(--big-font-size);
   color: var(--text-color);
@@ -508,8 +550,8 @@ img{
 .Typewriter__wrapper{
   text-align: center;
   font-size: var(--h2-font-size);
-  font-family: var(--robotomono-font);
-  font-weight: var(--font-medium);
+  font-family: var(--nothing-font);
+  font-weight: var(--font-bold);
   color: var(--text-color);
 }
 
@@ -521,7 +563,7 @@ img{
 }
 
 .home__subtitle{
-  font-family: var(--nothing-font);
+  font-family: var(--robotomono-font);
   text-align: center;
   font-size: var(--h3-font-size);
   color: var(--text-color);
@@ -838,6 +880,7 @@ img{
   .nav__list{
     display: flex;
     column-gap: 2rem;
+    transform: translateY(50%);
   }
 
   .nav__menu{
