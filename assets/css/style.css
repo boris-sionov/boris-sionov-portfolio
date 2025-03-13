@@ -80,6 +80,7 @@
     --background-body-color: hsl(var(--hue-color), 66%, 99%);
     --border-color: none;
     --border-style: none;    
+    --footer-color: var(--first-color);
     
 }
 
@@ -87,7 +88,7 @@
   
     @font-face {
         font-family: 'Nothing';
-        src: url('https://raw.githubusercontent.com/boris-sionov/boris-sionov-portfolio/main/fonts/ndot-47-inspired-by-nothing.otf') format('opentype');
+        src: url('https://raw.githubusercontent.com/boris-sionov/boris-sionov-portfolio/main/assets/fonts/ndot-47-inspired-by-nothing.otf') format('opentype');
         font-weight: normal;
         font-style: normal;
     }
@@ -109,8 +110,6 @@
     }
     
 }
-
-
 
 /* =========== VARIABLE COLOR DARK THEME ============ */
 body.dark-theme{
@@ -727,7 +726,6 @@ img{
     .footer__copy{
       font-size: var(--smaller-font-size);
       text-align: center;
-      color: var(--text-color);
       margin-top: var(--mb-2);
     }
     
@@ -735,7 +733,8 @@ img{
     .footer__title,
     .footer__subtitle,
     .footer__link,
-    .footer__social{
+    .footer__social,
+    .footer__copy{
       color: #FFF;
     }
     
