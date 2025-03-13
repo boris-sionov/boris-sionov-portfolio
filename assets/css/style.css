@@ -339,6 +339,16 @@ img{
 
 
 @media screen and (max-width: 768px) {  
+  
+  .home__image--secondary {
+    max-width: 120px;
+    margin-top: 2rem; /* Optional: Adjust spacing */
+    overflow: hidden;
+    display: flex;
+    justify-content: center; /* Horizontally center the content */
+    align-items: center; /* Vertically center the content */
+    margin: 0 auto; /* Center the image in its container */
+}
   .nav__menu{
       position: fixed;
       bottom: -100%;
@@ -385,6 +395,10 @@ img{
   text-align: center; /* Center text */
   display: flex;
   justify-content: center; /* Center within flex container */
+}
+
+.footer__links{
+  text-align: center; /* Center text */
 }
 
 .footer__socials{
@@ -646,18 +660,7 @@ img{
   }
 
 
-@media screen and (max-width: 768px) {
 
-  .home__image--secondary {
-    max-width: 120px;
-    margin-top: 2rem; /* Optional: Adjust spacing */
-    overflow: hidden;
-    display: flex;
-    justify-content: center; /* Horizontally center the content */
-    align-items: center; /* Vertically center the content */
-    margin: 0 auto; /* Center the image in its container */
-}
-  }
 }
 
 /* ===================== ABOUT ================== */
@@ -689,6 +692,7 @@ img{
     .footer__title{
       font-size: var(--h1-font-size);
       margin-bottom: var(--mb-0-25);
+      margin-top: -0.75rem;
     }
     
     .footer__subtitle{
@@ -697,11 +701,18 @@ img{
     }
     
     .footer__links{
-      display: flex;
+      /* display: grid;
       align-items: center;
       flex-direction: column;
-      row-gap: 1.5rem;
+      padding-right: 2rem; */
+
+      display: grid;
+      grid-template-columns: 1fr; /* Ensures 1 column by default */
+      row-gap: 1rem; /* Adds space between rows */
       padding-right: 2rem;
+      align-items: center;
+       /* Aligns items to the left */
+      
     }
     
     .footer__link:hover{
@@ -734,6 +745,7 @@ img{
     .footer__subtitle,
     .footer__link,
     .footer__social,
+    .footer__label,
     .footer__copy{
       color: #FFF;
     }
@@ -939,18 +951,19 @@ img{
     padding: 3rem 0 3.5rem;
   }
 
-  .footer__links{
+  /* .footer__links{
     flex-direction: row;
-    column-gap: 2rem;
-  }
+    column-gap: 1rem;
+  }*/
+
 
   .footer__copy{
     margin-top: 4.5rem;
   }
 
-  /* .home__data{
+  .home__data{
     transform: translateX(80px);
-  } */
+  } 
 }
 
 /* Larger size Screen devices */
