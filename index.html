@@ -33,9 +33,10 @@
   <body>
     <!-- ------------- HEADER -------------------- -->
     <header class="header" id="header">
-      <nav class="nav container navbar-expand-lg">
-        <a href="#" class="nav__logo navbar-brand ml-3">
-          <div>Boris Sionov</div>
+        <nav class="nav container navbar-expand-lg">
+            <a href="#" class="nav__logo navbar-brand ml-3" data-tooltip="Automation QA">
+                <div>Boris Sionov</div>
+            </a>
         </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-default" aria-controls="navbar-default" aria-expanded="false" aria-label="Toggle navigation">
         </button>
@@ -82,7 +83,7 @@
             </div>
             <div class="nav__btns">
                 <!-- THEME CHANGING BUTTONS -->
-                <div class="dark_btn nav__dark-mode">
+                <div class="dark_btn nav__dark-mode" data-tooltip="Change Mode">
                     <i data-mode="dark" class="uil uil-moon moon-change-theme" id="theme-button"></i>
                 </div>
 
@@ -113,17 +114,17 @@
 
           <!-- Profile Picture -->
           <div class="home__image">
-              <img src="assets//img/avatar-image.png" alt="My Avatar">
+              <img src="https://res.cloudinary.com/boris-sionov/image/upload/v1741880168/avatar-image_nzxstu.png" alt="My Avatar">
           </div>
 
           <div class="home__data">
               <small class="home__welcome s-color"> Welcome to my Portfolio Website! </small>
               <h1 class="home__title"> Hey I'm </h1>
               <div class="home__image home__image--secondary">
-                  <img src="assets//img/avatar-image.png" alt="My Avatar">
+                  <img src="https://res.cloudinary.com/boris-sionov/image/upload/v1741880168/avatar-image_nzxstu.png" alt="My Avatar">
               </div>
               <div id="typewriter"></div>
-              <h3 class="home__subtitle" id="home-bio">An Automation engineer and manual QA Tester </h3>
+              <h3 class="home__subtitle" id="home-bio">Automation Engineer with expertise in mobile and web testing, OTT, and software-hardware integration. Passionate about innovation and efficiency in testing.  </h3>
               <a href="#contact" class="button button--flex">
                   Contact Me <i class="uil uil-message button__icon"></i>
               </a>
@@ -134,21 +135,161 @@
       <div class="home__scroll">
           <a href="#about" class="home__scroll-button button--flex">
               <i class="uil uil-mouse-alt home__scroll-mouse"></i>
-              <!-- <span class="home__scroll-name"> Scroll Down </span>
-              <i class="uil uil-arrow-down home__scroll-arrow"></i> -->
+              <span class="home__scroll-home"> Scroll Down</span>
+              <i class="uil uil-arrow-down"></i>
           </a>
       </div>
   </section>
 
-      <!-- About Me -->
-      <section class="about section" id="about">
-        <h1 class="section_title">About Me</h1>
-      </section>
+    <!-- ------------- ABOUT ME -------------------->
+        <section class="about section" id="about">
+            <h2 class="section__title">About</h2>
+            <span class="section__subtitle"> My Introduction </span>
 
-      <!-- Skills -->
-      <section class="skills section" id="skills">
-        <h1 class="section_title">Skills</h1>
-      </section>
+            <div class="about__container container grid">
+                <img src="" alt="" class="about__img">
+
+                <div class="about__data">
+                    <p class="about__description" id="home-about"> 
+                        I'm Boris Sionov, an experienced Automation Engineer specializing in mobile and web testing. With a strong background in OTT testing, software and hardware integration, and test automation, I thrive on ensuring seamless digital experiences. Passionate about innovation, I continuously explore new technologies to enhance testing efficiency and reliability.
+                    </p>
+                </div>
+
+                <div class="about__info">
+                    <div>
+                        <span class="about__info-title"> 8+ </span>
+                        <span class="about__info-name"> Manual testing <br> Experience </span>
+                    </div>
+
+                    <!-- <div>
+                        <span class="about__info-title"> 2+ </span>
+                        <span class="about__info-name"> Completed <br> Projects </span>
+                    </div> -->
+
+                    <div>
+                        <span class="about__info-title"> 2+ </span>
+                        <span class="about__info-name"> Completed <br> Projects </span>
+                    </div>
+                </div>
+
+                <div class="about__buttons" data-tooltip="Download my CV">
+                    <a href="/assets/files/BorisSionovCV.docx" download="my_CV" target="_blank" class="button button--flex cv_download_btn" data-tooltip="Download my CV">
+                        Download CV <i class="uil uil-download-alt button__icon"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+
+ <!-- ------------- Skills-------------------->
+ <section class="skills section" id="skills">
+    <h2 class="section__title"> Skillset </h2>
+    <span class="section__subtitle"> My skillsets </span>
+
+    <div class="skills__container container grid">
+        <div class="row" id="skillset_container">
+            <!-- Skill 1 - Selenium -->
+            <div class="skills__container-card">
+                <div class="card_skill shadow2">
+                    <div class="imgBx">
+                        <img src="https://res.cloudinary.com/boris-sionov/image/upload/v1742462340/kfjepjubxywogvvadmo1.svg" alt="Selenium logo">
+                    </div>
+                    <div class="contentBx">
+                        <h4> Selenium </h4>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Skill 2 -->
+            <div class="skills__container-card">
+                <div class="card_skill shadow2">
+                    <div class="imgBx">
+                        <img src="https://res.cloudinary.com/bjha/image/upload/v1627831742/skillset%20logos/Css3-595b40b65ba036ed117d3eb8_jiqifm.svg" alt="CSS logo">
+                    </div>
+                    <div class="contentBx">
+                        <h4> CSS </h4>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Skill 3 -->
+            <!-- <div class="skills__container-card">
+                <div class="card_skill shadow2">
+                    <div class="imgBx">
+                        <img src="https://res.cloudinary.com/bjha/image/upload/v1627831744/skillset%20logos/javascript-seeklogo.com_wthmgd.svg" alt="Javascript logo">
+                    </div>
+                    <div class="contentBx">
+                        <h4> Javascript </h2>
+                    </div>
+                </div>
+            </div> -->
+
+
+            <!-- Skill 4 -->
+            <!-- <div class="skills__container-card">
+                <div class="card_skill shadow2">
+                    <div class="imgBx">
+                        <img src="https://res.cloudinary.com/bjha/image/upload/v1627831742/skillset%20logos/bootstrap-5-seeklogo.com_rz32ih.svg" alt="Bootstrap logo">
+                    </div>
+                    <div class="contentBx">
+                        <h4> Bootstrap </h4>
+                    </div>
+                </div>
+            </div>
+ -->
+
+            <!-- Skill 5 -->
+            <div class="skills__container-card">
+                <div class="card_skill shadow2">
+                    <div class="imgBx">
+                        <img src="https://res.cloudinary.com/bjha/image/upload/v1627831745/skillset%20logos/python-seeklogo.com_sbuevg.svg" alt="HTML logo">
+                    </div>
+                    <div class="contentBx">
+                        <h2> Python </h2>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Skill 5 -->
+            <div class="skills__container-card">
+                <div class="card_skill shadow2">
+                    <div class="imgBx">
+                        <img src="https://res.cloudinary.com/bjha/image/upload/v1627831743/skillset%20logos/git-seeklogo.com_eqv1dl.svg" alt="HTML logo">
+                    </div>
+                    <div class="contentBx">
+                        <h2> Git </h2>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Skill 6 -->
+            <div class="skills__container-card">
+                <div class="card_skill shadow2">
+                    <div class="imgBx">
+                        <img src="https://res.cloudinary.com/bjha/image/upload/v1627831742/skillset%20logos/github-seeklogo.com_yhhbou.svg" alt="HTML logo">
+                    </div>
+                    <div class="contentBx">
+                        <h2> Github </h2>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Skill 8 -->
+            <div class="skills__container-card">
+                <div class="card_skill shadow2">
+                    <div class="imgBx">
+                        <img src="https://res.cloudinary.com/bjha/image/upload/v1627831746/skillset%20logos/visual-studio-code-seeklogo.com_ps85dh.svg" alt="HTML logo">
+                    </div>
+                    <div class="contentBx">
+                        <h2> VS Code </h2>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
 
       <!-- Qualification -->
       <section class="qualification section" id="qualification">
@@ -178,11 +319,17 @@
 
           <ul class="footer__links">
             <li>
-                <span class="footer__label">Phone:</span> <a href="tel:052-5927886" class="footer__link">052-5927886</a>
+                <span class="footer__label">
+                    <i class="uil uil-phone"></i>
+                </span> 
+                <a href="tel:052-5927886" class="footer__link">052-5927886</a>
             </li>
         
             <li>
-                <span class="footer__label">Email:</span> <a href="mailto:boris103@gmail.com" class="footer__link">boris103@gmail.com</a>
+                <span class="footer__label">
+                    <i class="uil uil-envelope"></i>
+                </span> 
+                <a href="mailto:boris103@gmail.com" class="footer__link">Boris103@gmail.com</a>
             </li>
         </ul>
 
@@ -196,7 +343,7 @@
           </div>
       </div>
 
-      <p class="footer__copy">&#169; Copyright © 2025 Boris Sionov.
+      <p class="footer__copy"> 2025 Boris Sionov.
 
       </p>
   </div>
@@ -220,6 +367,6 @@
         <script src="assets/js/script.js"></script>
 
         <!-- Audio for theme change -->
-        <audio id="theme-sound" src="assets//audio/flip-switch-304548.mp3"></audio>
+        <audio id="theme-sound" src="https://res.cloudinary.com/boris-sionov/video/upload/v1741880250/flip-switch-304548_fstymv.mp3"></audio>
   </body>
 </html>

@@ -88,7 +88,7 @@
   
     @font-face {
         font-family: 'Nothing';
-        src: url('https://raw.githubusercontent.com/boris-sionov/boris-sionov-portfolio/main/assets/fonts/ndot-47-inspired-by-nothing.otf') format('opentype');
+        src: url('https://res.cloudinary.com/boris-sionov/raw/upload/v1741880412/ndot-47-inspired-by-nothing_h52pah.otf') format('opentype');
         font-weight: normal;
         font-style: normal;
     }
@@ -165,11 +165,45 @@ body.dark-theme{
   font-size: var(--h2-font-size);
   cursor: pointer;
   margin-right: 1rem;
+  position: relative;
 }
 
 .dark_btn:hover{
   color: var(--first-color);
 }
+
+/* Tooltip styling */
+.dark_btn {
+  position: relative;
+  cursor: pointer;
+}
+
+.dark_btn::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  top: 130%; /* Position below the button */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 6px 10px;
+  border-radius: 4px;
+  font-size: 12px;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease-in-out, transform 0.2s ease-in-out;
+  pointer-events: none;
+  z-index: 9999;
+}
+
+
+.dark_btn:hover::after {
+  opacity: 1;
+  visibility: visible;
+}
+
+
 
 .change-theme{
   font-size: 1.25rem;
@@ -321,6 +355,37 @@ img{
 
 .nav__logo:hover{
   color: var(--first-color);
+}
+
+
+.nav__logo {
+  position: relative; /* Ensure tooltip is positioned relative to this element */
+}
+
+.nav__logo::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  top: 130%; /* Position below the logo */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 6px 10px;
+  border-radius: 4px;
+  font-size: 12px;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease-in-out, transform 0.2s ease-in-out;
+  pointer-events: none;
+  z-index: 9999;
+}
+
+/* Show tooltip on hover */
+.nav__logo:hover::after {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(5px); /* Slight downward animation */
 }
 
 .nav__toggle{
@@ -643,6 +708,81 @@ img{
 }
 
 
+
+/* ===================== ABOUT ================== */
+.about{
+  padding-top: 1rem;
+  margin-top: 7rem;
+}
+.about__img{
+  width: 200px;
+  border-radius: .5rem;
+  margin-bottom: var(--mb-2);
+  display: inline-flex;
+  justify-self: center;
+}
+
+.about__description{
+  text-align: center;
+  margin-bottom: var(--mb-2-5);
+  color: var(--text-color);
+}
+
+.about__info{
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: var(--mb-2-5);
+}
+
+.about__info-title{
+  font-size: var(--h2-font-size);
+  font-weight: var(--font-semi-bold);
+  color: var(--title-color);
+}
+
+.about__info-name{
+  font-size: var(--smaller-font-size);
+  font-family: var(--roboto-font);
+  color: var(--text-color-light);
+}
+
+.about__info-name,
+.about__info-title{
+  display: block;
+  text-align: center;
+}
+
+.about__buttons{
+  display: flex;
+  justify-content: center;
+  position: relative; 
+}
+
+.cv_download_btn::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: -40px; /* Adjust this value to move tooltip under the cursor */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 6px 10px;
+  border-radius: 4px;
+  font-size: 12px;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.cv_download_btn:hover::after {
+  opacity: 1;
+  visibility: visible;
+}
+
+
+
+
 @media screen and (max-width: 1240px) {
   .home__image {
       display: none; /* Show the image in its original place */
@@ -663,10 +803,122 @@ img{
 
 }
 
-/* ===================== ABOUT ================== */
-
 
 /* ===================== SKILLS ================== */
+
+
+.skills__container-card{
+  position: relative;
+  display: grid;
+  width: auto;
+  height: auto;
+  padding-bottom: var(--mb-0-75);
+  margin: auto;
+  margin-bottom: var(--mb-2);
+}
+
+.skills__container-card:hover{
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
+.card_skill{
+  position: relative;
+  width: 150px;
+  height: 200px;
+  border-radius: 15px;
+  overflow: hidden;
+  margin: auto;
+  padding: 2em;
+  text-shadow: 0 0 1em transparent(black, 0.5);
+  backdrop-filter: blur(20px);
+  transform: perspective(500px);
+  transform-style: preserve-3d;
+  cursor: pointer;
+}
+.card_skill::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background:var(--first-color-lighter);
+  clip-path:circle(100px at 80% 20%);
+  transition: 0.5s ease-in-out;
+}
+
+.card_skill:hover::before{
+  clip-path: circle(280px at 80% -20%);
+  transition: scale(1.08);
+}
+
+.card_skill::after{
+  content: '';
+  position: absolute;
+  top: 30%;
+  left: -20%;
+  font-size: var(--h3-font-size);
+  font-style: italic;
+  color: var(--text-color);
+}
+.imgBx{
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  transition: 0.5s;
+  transform: translate( 5%, -10%);
+  object-fit: fill;
+}
+
+.card_skill:hover .imgBx{
+  width: 150px;
+  height: 150px;
+  transform: translate(-20%, -10%);
+}
+
+
+.contentBx{
+  display: flex;
+  align-content: space-between;
+  text-align: center;
+  position: relative;
+  width: 0%;
+  height: 0%;
+  transform: scale(0.0);
+  transition: 1s;
+}
+
+.card_skill:hover .contentBx{
+  display: flex;
+  height: 100%;
+  width: 70%;
+  position: relative;
+  object-fit: cover;
+  text-align: center;
+  transform: translate(-42%, 92%);
+  transition: 1.5s;
+}
+
+.cardskill .contentBx h2{
+  position: relative;
+  font-weight: var(--font-medium);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+}
+
+.shadow2{
+  box-shadow:
+  0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+  0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+  0 12.5px 10px rgba(0, 0, 0, 0.06),
+  0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+  0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+  0 100px 80px rgba(0, 0, 0, 0.12)
+;
+}
+
 
 /* ===================== QUALIFIFICATION ================== */
 
@@ -863,7 +1115,7 @@ img{
   }
 
   .section__subtitle{
-    margin-bottom: 4rem;
+    margin-bottom: 1rem;
   }
 
   .header{
