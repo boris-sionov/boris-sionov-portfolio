@@ -124,6 +124,8 @@ function scrollUp(){
     // When the scroll higher than 560 viewpoint /height , then the scroll up icon showld appear and on clicking should reach top of the page
     if(this.scrollY >= 560) {
         scrollup.classList.add('show-scroll');
+
+console.log("Scorlled up");
     }
     else {
         scrollup.classList.remove('show-scroll')

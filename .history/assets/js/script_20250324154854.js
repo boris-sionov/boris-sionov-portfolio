@@ -130,6 +130,7 @@ function scrollUp(){
     }
 }
 window.addEventListener('scroll', scrollUp)
+console.log("up");
 
 //===================================== SCROLL SECTION ACTIVE HIGHLIGHT =========================
 

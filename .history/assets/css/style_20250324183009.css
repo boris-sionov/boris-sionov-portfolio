@@ -440,7 +440,7 @@ img{
     display: flex;           
     justify-content: center; 
     gap: 1rem;               
-    z-index: 0;
+    z-index: 10;
 }
 
 .footer__title{
@@ -805,7 +805,7 @@ img{
 }
 
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1000px) {
   .home__image {
       display: none; 
   }
@@ -823,7 +823,7 @@ img{
       align-items: center; 
       margin: 0 auto;
   }
-  
+
 
 }
 

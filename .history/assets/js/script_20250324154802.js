@@ -128,6 +128,7 @@ function scrollUp(){
     else {
         scrollup.classList.remove('show-scroll')
     }
+    console.log("Scroll up being called and working!")
 }
 window.addEventListener('scroll', scrollUp)
 
@@ -149,6 +150,7 @@ function scrollActive() {
             document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.remove('active-link')
         }
     })
+    console.log("Section highlight working!")
 }
 window.addEventListener('scroll', scrollActive)
 

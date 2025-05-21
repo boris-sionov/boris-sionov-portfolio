@@ -440,7 +440,7 @@ img{
     display: flex;           
     justify-content: center; 
     gap: 1rem;               
-    z-index: 0;
+    z-index: 10;
 }
 
 .footer__title{
@@ -545,6 +545,10 @@ img{
 
 .home__image--secondary {
   display: none; 
+}
+
+.home__content--secondery{
+  display: none;
 }
 
 .home__image img {
@@ -823,7 +827,6 @@ img{
       align-items: center; 
       margin: 0 auto;
   }
-  
 
 }
 

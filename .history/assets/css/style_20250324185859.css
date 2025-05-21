@@ -440,7 +440,7 @@ img{
     display: flex;           
     justify-content: center; 
     gap: 1rem;               
-    z-index: 0;
+    z-index: 1;
 }
 
 .footer__title{
@@ -817,6 +817,7 @@ img{
   .home__image--secondary {
       max-width: 160px;
       margin-top: 2rem; 
+      margin-left: 2rem;
       overflow: hidden;
       display: flex;
       justify-content: center; 

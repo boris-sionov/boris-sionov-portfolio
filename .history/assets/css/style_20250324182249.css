@@ -440,7 +440,7 @@ img{
     display: flex;           
     justify-content: center; 
     gap: 1rem;               
-    z-index: 0;
+    z-index: 10;
 }
 
 .footer__title{
@@ -534,7 +534,7 @@ img{
 }
 
 .home__image {
-  max-width: 240px; 
+  max-width: 240px; /* Reduce the image size */
   width: 100%;
   border-radius: 50%;
   overflow: hidden;
@@ -544,7 +544,7 @@ img{
 }
 
 .home__image--secondary {
-  display: none; 
+  display: none; /* Hide the image by default */
 }
 
 .home__image img {
@@ -712,7 +712,6 @@ img{
   color: var(--first-color);
   transition: .5s;
 }
-
 .home__scroll-button:hover{
   color: var(--first-color-alt);
   transform: translateY(.25rem);
@@ -811,7 +810,7 @@ img{
   }
 
   .home__scroll-button{
-    display: none;
+    display: n;
   }
 
   .home__image--secondary {
@@ -823,7 +822,6 @@ img{
       align-items: center; 
       margin: 0 auto;
   }
-  
 
 }
 
@@ -1657,6 +1655,7 @@ border-color: var(--border-color);
   
   .home__scroll-button{
     margin-left: 3rem;
+    display: none;
   }
 
   .about{
@@ -1673,6 +1672,10 @@ border-color: var(--border-color);
   .about__description{
     text-align: initial;
   }
+
+  /* .about__info{
+    justify-content: space-between;
+  } */
 
   .about__buttons{
     justify-content: center;
@@ -1701,30 +1704,29 @@ border-color: var(--border-color);
 
 /* Larger size Screen devices */
 @media screen and (min-width: 1124px){
-  .header,
-  .main,
-  .footer__container{
-    padding: 0;
-  }
+    .header,
+    .main,
+    .footer__container{
+      padding: 0;
+    }
 
-  #home{
-    height: 85vh;
-  }
+    #home{
+      height: 85vh;
+    }
 
-  .home__social{
-    transform: translateX(-7.5rem);
-  }
+    .home__social{
+      transform: translateX(-7.5rem);
+    }
 
-  .contact__inputs{
-    grid-template-columns: repeat(2, 1fr);
-  }
+    .contact__inputs{
+      grid-template-columns: repeat(2, 1fr);
+    }
 
-  .contact__container{
-    padding-left: var(--mb-1);
-    padding-top: var(--mb-1);
-    row-gap: 2rem;
-    column-gap: 4em;
-    display: -webkit-inline-box;
-  }
-
+    .contact__container{
+      padding-left: var(--mb-1);
+      padding-top: var(--mb-1);
+      row-gap: 2rem;
+      column-gap: 4em;
+      display: -webkit-inline-box;
+    }
 }
