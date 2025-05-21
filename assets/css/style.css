@@ -1697,6 +1697,15 @@ border-color: var(--border-color);
   .home__data{
     transform: translateX(80px);
   } 
+
+  .blog-title-link .blog-slider__title {
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  .blog-title-link:hover .blog-slider__title {
+    text-decoration: underline;
+  }
 }
 
 /* Larger size Screen devices */
